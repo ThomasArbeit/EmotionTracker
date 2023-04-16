@@ -34,6 +34,9 @@ const props = defineProps<{
 </script>
 
 <style lang="less">
+.coucou {
+  background: red;
+}
 .mood {
  width: 62px;
  height: 64px;
