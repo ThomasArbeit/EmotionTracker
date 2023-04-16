@@ -36,7 +36,7 @@ import { onMounted } from 'vue';
 const props = defineProps<{
  day: Date,
  selected: Boolean,
- dayMood: number | undefined,
+ dayMood: any,
 }>()
 
 const weekDayShortName = computed(() => {

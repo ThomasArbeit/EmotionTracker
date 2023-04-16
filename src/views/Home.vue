@@ -150,11 +150,9 @@ function save() {
     comment: data.selectedDayComment,
     mood: data.selectedMood,
   } as DayMood;
-  if (data.recap.length) {
-    data.recap.push(dayMood);
-  }
+  data.recap.push(dayMood);
   localStorage.setItem('recap', JSON.stringify(data.recap));
-  data.selectedDayComment = undefined;
+  // data.selectedDayComment = undefined;
 }
 
 function moodOfTheDay(date: Date) {
