@@ -1,0 +1,3 @@
+module.epxorts = {
+ publicPath: '/EmotionTracker/'
+}
