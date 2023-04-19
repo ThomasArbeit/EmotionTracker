@@ -109,17 +109,17 @@ onMounted (() => {
 
 function assignDaysToData () {
   const today = new Date();
-  let tomorrow = new Date();
-  let dayAfterTomorrow = new Date();
   let yesterday = new Date();
-  let dayBeforeYesterday = new Date();
-  tomorrow.setDate(today.getDate() + 1);
-  dayAfterTomorrow.setDate(today.getDate() + 2);
+  let todayMinus2 = new Date();
+  let todayMinus3 = new Date();
+  let todayMinus4 = new Date();
   yesterday.setDate(today.getDate() - 1);
-  dayBeforeYesterday.setDate(today.getDate() - 2);
+  todayMinus2.setDate(today.getDate() - 2);
+  todayMinus3.setDate(today.getDate() - 3);
+  todayMinus4.setDate(today.getDate() - 4);
   data.selectedDay = today;
 
-  data.daysToDisplay = [ dayBeforeYesterday, yesterday, today, tomorrow, dayAfterTomorrow]
+  data.daysToDisplay = [ todayMinus4, todayMinus3, todayMinus2, yesterday, today]
 }
 
 function selectDay (day: Date) {
